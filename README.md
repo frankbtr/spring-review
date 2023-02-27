@@ -1,1 +1,1 @@
-# Java Developer Course
+# Weekly review of Spring framework
