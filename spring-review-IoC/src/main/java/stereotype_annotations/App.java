@@ -4,6 +4,7 @@ import stereotype_annotations.config.AppConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import stereotype_annotations.model.DataStructure;
+import stereotype_annotations.model.ExtraHours;
 import stereotype_annotations.model.Microservice;
 
 public class App {
@@ -15,5 +16,8 @@ public class App {
 
         Microservice ms = container.getBean(Microservice.class);
         ms.getTotalHours();
+
+        ExtraHours extraHours = container.getBean(ExtraHours.class);
+        System.out.println("Extra hours: " + extraHours.getHours());
     }
 }
